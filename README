@@ -1,5 +1,8 @@
-This contains the velocity templates, css and images to be used with
-Kunagi (http://kunagi.org) for the remote_install project.
+This repository contains the velocity templates, css and images to be used with
+Kunagi (http://kunagi.org) for several projects.
+
+The templates for these projects are stored one per branch to make it easier
+to deploy on systems.
 
 These were created by borrowing very heavily from Kunagi's own templates that
 are licensed as AGPLv3. Those templates are copyright 2008-2011 Witoslaw Koczewski,
