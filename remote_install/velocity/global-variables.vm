@@ -1,0 +1,9 @@
+
+## Global Variables
+#set( $projectname = "Remote Installation")
+#set( $sitename = "remote_install")
+#set( $baseurl = "http://localhost/remote_install/")
+#set( $appurl = "http://localhost:8080/kunagi")
+#set( $logo-image = "remote_install-logo.png")
+#set( $keywords = "Fedora, Anaconda, Installation, Testing")
+#set( $authors = "remote_install team")

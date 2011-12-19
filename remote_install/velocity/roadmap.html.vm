@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+#parse( "global-variables.vm" )
+
+#header("development", "Development - $projectname", "$projectname project roadmap. Sprint Backlog and Product Backlog. Developers. Donations.", "$projectname, roadmap, Sprint Backlog, Product Backlog, developers, donations")
+
+
+<div class="section">
+
+<div class="section">
+    <a name="sprintbacklog"></a>
+    <h2>Sprint Backlog</h2>
+    <p>The current sprint started on <strong>${sprintBacklog.begin}</strong> and will end on <strong>${sprintBacklog.end}</strong>.
+        #if ($sprintBacklog.release)
+            Release <strong>${sprintBacklog.release}</strong> is being implemented.
+        #end
+    </p>
+    #if( $sprintBacklog.goal )
+        <h3>Goal for the current Sprint</h3>
+        <p>$sprintBacklog.goal</p>
+    #end
+    <h3>Stories the Team has committed to</h3>
+    <ul>
+    #foreach( $story in $sprintBacklog.stories )
+        <li><a href="${story.reference}.html" class="reference">$story.reference</a> $story.label</li>
+    #end
+    </ul>
+    <h3>Current Burndown</h3>
+    <img src="sprint-burndown-700x200.png" alt="current sprint burndown chart">
+</div>
+
+
+<div class="separator"></div>
+
+<div class="section">
+    <a name="productbacklog"></a>
+    <h2>Product Backlog</h2>
+    <ul>
+    #foreach( $story in $productBacklog.stories )
+        <li><a href="${story.reference}.html" class="reference">$story.reference</a> $story.label</li>
+    #end
+    </ul>
+    <p>There are more story canditates among collected <a href="ideas.html">ideas</a>.</p>
+</div>
+
+
+<div class="separator"></div>
+
+<div class="section">
+    <a name="participation"></a>
+    <h2>Participation</h2>
+    <p>
+    If you'd like to help work on this project, please submit an issue with your requested login
+    or send an email to the <a href="https://fedorahosted.org/mailman/listinfo/autoqa-devel"> AutoQA Development List</a>
+    </p>
+</div>
+
+
+#footer()

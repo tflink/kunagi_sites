@@ -1,0 +1,10 @@
+This contains the velocity templates, css and images to be used with
+Kunagi (http://kunagi.org) for the remote_install project.
+
+These were created by borrowing very heavily from Kunagi's own templates that
+are licensed as AGPLv3. Those templates are copyright 2008-2011 Witoslaw Koczewski,
+Artjom Kochtchi, Arne Moehle, Fabian Hager, Kacper Grubalski.
+
+The content in this repository is mostly licenced as AGPLv3 with the exception
+of the images in html/img which are all licensed under the Creative Commons licence
+CC-BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/).

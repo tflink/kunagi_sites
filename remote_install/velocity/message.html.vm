@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+#parse( "global-variables.vm" )
+
+#header("home", "Message - $projectname", "$projectname Message", "$projectname")
+
+<div class="section">
+    <span id="messageOutput"></span>
+</div>
+
+<script type="text/javascript">
+#literal()
+
+    message = window.location.hash;
+    if (message != null) message = message.substring(1);
+    $('\#messageOutput').append(unescape(message));
+
+#end
+</script>
+
+#footer()

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+#parse( "global-variables.vm" )
+
+#header("documentation", "Documentation - $projectname", "$projectname documentation and tutorials.", "$projectname, documentation, tutorial, guide")
+
+<div class="section">
+    See also: <a href="faq.html">FAQ - frequently asked questions</a> and <a href="developerguide.html">developer guide</a>.
+</div>
+
+
+<div class="separator"></div>
+
+<div class="section">
+    $wiki.installDoc
+</div>
+
+
+#footer()
